@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  padding: 6px;
+}
+
+.mainMenu {
+  text-align: center;
+}
+
+#subMenu {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  color: black;
+}
+
+#subMenu t1,
+t2,
+t3 {
+  width: 100px;
+  border: 6px solid black;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#subMenu t1 {
+  background-color: salmon;
+}
+
+#subMenu t2 {
+  color: white;
+  background-color: crimson;
+}
+
+#subMenu t3 {
+  background-color: darkkhaki;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+  overflow: auto;
+}
+@media screen {
+    .col-lg-4,.col-md-6,
+    .col-md-12,.col-sm-12 {
+        float: left;
+        margin: 6px;
+        border: 6px solid black;
+      }
+}
+
+/********** Large devices only **********/
+@media (min-width: 769px) {
+  .col-lg-4 {
+    width: 31%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 426px) and (max-width: 768px) {
+  .col-md-6 {
+    width: 47%;
+  }
+  .col-md-12 {
+    width: 98%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 425px) {
+  .col-sm-12 {
+    width: 96%;
+  }
+}
